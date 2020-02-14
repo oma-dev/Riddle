@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Riddle of Maltoshi</title>
+    
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.2/semantic.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Archivo:400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+
+
+  </head>
+  <body>
+
+
+    <div class="ui secondary huge inverted menu">
+
+
+
+      <a class="header item " href="/">
+        <span>Home</span>
+      </a>
+      <a class="header item " href="/about">
+        <span>About</span>
+      </a>
+
+
+      <div class="right menu">
+<% if(!cuser) { %>
+        <a class="ui item " href="signup">
+          <span>Sign Up</span>
+        </a>
+        <a class="ui item" href="login">
+          <span>Login</span>
+        </a>
+        <% } else { %>
+          <p class="ui item">
+            <span>Logged in as <%= cuser.username %></span>
+            </p>
+        <a class="ui item" href="/logout">
+          <span>Logout</span>
+        </a>
+        <% } %>
+      </div>
+    </div>
+    <div class="container" id="flash">
+            <% if(error && error.length > 0){%>
+            <div class="ui red message" role="alert"><%= error %></div>
+            <% } %>
+            <% if(success && success.length > 0){ %>
+            <div class="ui positive message" role="alert"><%= success %></div>
+            <%  } %>
+
+        </div>

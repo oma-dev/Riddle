@@ -1,0 +1,33 @@
+<% include ./partials/header.ejs %>
+
+<div class="container baban">
+  <form class="ui form forme inverted" action="/signup" method="POST">
+    <div class="field">
+      <label><span class="formt">Username:</span></label>
+      <input type="text" name="username" placeholder ="username">
+    </div>
+    <div class="field">
+      <label><span class="formt">Password:</span></label>
+      <input type="password" name="password" placeholder ="password">
+    </div>
+    <div class="field">
+      <label><span class="formt">E-Mail:</span></label>
+      <input type="text" name="email" placeholder ="mail">
+    </div>
+
+    <button class="ui large inverted red basic button" type="submit">Submit</button>
+  </form>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<% include ./partials/footer.ejs %>

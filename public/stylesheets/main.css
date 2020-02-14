@@ -1,0 +1,75 @@
+
+body {
+  text-align: center;
+  background: black;
+}
+
+#ig {
+  font-size: 30px;
+}
+h1, h2, h4{
+
+  font-family: 'Archivo', sans-serif;
+  color: white;
+}
+
+p, a span {
+  font-family: 'Archivo', sans-serif;
+  color: white;
+}
+#sorus {
+  color: white;
+}
+#an {
+  margin: 0 auto;
+  display: inline-block;
+
+}
+
+#hmm {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.forme {
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+#flash {
+  margin-bottom: 30px;
+
+}
+
+.formt {
+
+  font-size: 18px;
+}
+
+.uyed {
+  display: inline-block;
+
+  margin-top: 300px;
+}
+
+#zirves{
+  font-size: 20px;
+}
+
+#mj {
+  font-family: 'Archivo', sans-serif;
+
+  color: white;
+}
+
+#sorusayi h1, #sorusayi h3 {
+  margin:auto 0;
+}
+
+#sorusayi {
+  margin-bottom: 0;
+  margin-top:16px;
+  color: white;
+
+}

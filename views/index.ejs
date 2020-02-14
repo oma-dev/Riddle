@@ -1,0 +1,65 @@
+<% include ./partials/header.ejs %>
+
+<div id="mm" class="container">
+
+
+  <% if(cuser && (cuser.username == champion.username) && cuser.qheson == qcount + 1) { %>
+    <div class="container">
+      <h1>Tebrikler yiğidim...seni tanımak isterim. Bana mutlaka ulaş.</h1>
+
+    </div>
+    <% } else if(cuser && cuser.qheson == qcount + 1) { %>
+      <div class="container">
+        <h1>Bu oyunun kazananı <%= champion.username %> oldu...Bir sonrakinde sen olabilirsin.</h1>
+      </div>
+
+
+  <% } else if(cuser) { %>
+  <div class="container" id="an">
+
+    <span id ="sorus"><h1>SORU #<%= question.sort %></h1></span>
+  <img class="ui large bordered rounded image" src="<%= question.image %>">
+  <span id="mj"><h2> <%= question.text %> </h2> </span>
+  <form class="ui form inverted" action="/" method="POST">
+
+      <input  id="hmm" type="text" name="answer">
+      <button class="ui large inverted red basic button" type="submit">Submit</button>
+
+
+   </form>
+
+
+   </div>
+
+
+</div>
+
+<div  id="sorusayi">
+  <% if(champion.qheson == qcount + 1) {   %>
+  <h1><%= champion.username %> son soruyu bilen ilk kişi oldu!</h1>
+  <%  } else { %>
+  <h1> catastroph <%= champion.qheson %>. soruda! <span id="zirves">(<%=ccount - 1 %>  kişi ile birlikte)</span></h1>
+  <%  }  %>
+  <h3>şu anda toplamda <%= qcount %> soru var</h3>
+  <h3><%= ucount %> kişi oynuyor</h3>
+
+</div>
+
+
+
+
+
+  <% } else {%>
+    <div>
+
+    <span class="uyed"><h1> Please sign up to see the questions. </h1></span>
+
+    <% } %>
+
+
+
+</div>
+
+
+
+<% include ./partials/footer.ejs %>
