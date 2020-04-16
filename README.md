@@ -1,5 +1,5 @@
 # Riddle
-This game has finished and no longer playable. 
+This game has finished and is no longer playable. 
 
 
 Riddle game I did on my first summer of university, inspired by the game I really enjoyed playing, DHRiddle. Consisted of 5 questions that require heavy research to solve, all questions were solved in a week with a total of 2000~ participants.
